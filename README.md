@@ -1,3 +1,3 @@
-# datastructures-playground
+# DSA-Playground
 
-A series of ES6 files that I have been playing with while learning about different data structures.
+Files related to learning about data structures and algorithms.
