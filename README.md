@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # DSA-Playground
 
 This repository holds notes and practice files related to these online tutorials.
@@ -70,23 +68,17 @@ function summation(n) {
 }
 ```
 
-The statements on line 2 and line 6 are executed only once each.
-
-The statement on line 4 is executed as many times as the loop repeats.
-
+The statements on line 2 and line 6 are executed only once each.  
+The statement on line 4 is executed as many times as the loop repeats.  
 If n = 4, the statement on line 4 is executed 4 times. Adding the single execution of the other two statements, we arrive at 4+2 = 6.
 
-Since the loop will, in a worst-case scenario, execute an **n** amount of times (the whole input size), the complexity of this algorithm can be written down as:
-
+Since the loop will, in a worst-case scenario, execute an **n** amount of times (the whole input size), the complexity of this algorithm can be written down as:  
 **O(n+2)**
 
 
-When n = 100, complexity is 100+2.
-
-When n = 100000, complexity is 100000+2.
-
-Eventually, as **n** gets higher, the **+2** becomes insignificant and can be abbreviated.
-
+When n = 100, complexity is 100+2.  
+When n = 100000, complexity is 100000+2.  
+Eventually, as **n** gets higher, the **+2** becomes insignificant and can be abbreviated.  
 Thus, we can abbreviate _O(n+2)_ as _O(n)_. This is called **linear time complexity**.
 
 #### Quadratic Time Complexity
@@ -103,15 +95,14 @@ for (i = 1; i <= n; i++) {
 
 This function holds two nested loops, and the time complexity can now be described as a quadratic function (eg. `3n²+5n+1`).
 
-Much like in the previous example, the non-squared terms do not scale at a significant rate when the input size becomes very large, and thus they can be abbreviated as well. This means the Big-O notation for this algorithm becomes:
+Much like in the previous example, the non-squared terms do not scale at a significant rate when the input size becomes very large, and thus they can be abbreviated as well. This means the Big-O notation for this algorithm becomes:  
 **O(n²)**.
 
 This is called **quadratic time complexity**.
 
 #### Other
 
-If the function holds three nested loops, it becomes cubic: **O(n³)**.
-
+If the function holds three nested loops, it becomes cubic: **O(n³)**.  
 If the input size reduces by half in every iteration, it becomes logarithmic: **O(logn)**.
 
 ## Data Structures
@@ -154,6 +145,3 @@ There will be frustration. This is fine.
 The effort of learning is always rewarded with newfound knowledge.
 
 # ![gif](https://media0.giphy.com/media/l49JKCSoloVTGjmWQ/giphy.gif?cid=ecf05e47rsp1kiq57sgs1430vwyckzc8ln84hol1qpfj86uh&rid=giphy.gif&ct=g)
-
-
-> > > > > > > 44d97f387c1c834414415dc116acb6a6a4a382f3
