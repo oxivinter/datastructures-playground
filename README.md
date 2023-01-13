@@ -33,15 +33,15 @@ Complexity is represented using asymptotic notations (mathematical tools used to
 
 - Big-O Notation — O(n) — Worst case complexity
 - Big-Ω Notation — Ω(n) — Best case complexity _(less frequently used)_
-- Theta Notation - Θ(n) — Average case complexity _(less frequently used)_
+- Theta Notation — Θ(n) — Average case complexity _(less frequently used)_
 
-#### Big-O Notation
+### Big-O Notation
 
 Big-O Notation describes the complexity of an algorithm using algebraic terms. It is expressed in terms of the **input**, and it is intended to focus on the bigger picture without getting caught up in the minute details.
 
 The worst-case time complexity of an algorithm _counts the number of times a statement executes based on the input size_.
 
-##### Constant Time Complexity
+#### Constant Time Complexity
 
 For example, given the following JavaScript function:
 
@@ -54,7 +54,7 @@ function summation(n) {
 Since this function only holds one statement, and this statement will execute only once regardless of the input provided, the complexity of this algorithm can be written down as:
 **O(1)**.
 
-##### Linear Time Complexity
+#### Linear Time Complexity
 
 For example, given the following JavaScript function:
 
@@ -71,20 +71,25 @@ function summation(n) {
 ```
 
 The statements on line 2 and line 6 are executed only once each.
+
 The statement on line 4 is executed as many times as the loop repeats.
-If n = 4, the statement on line 4 is executed 4 times.
-Adding the single execution of the other two statements, we arrive at 4+2 = 6.
+
+If n = 4, the statement on line 4 is executed 4 times. Adding the single execution of the other two statements, we arrive at 4+2 = 6.
 
 Since the loop will, in a worst-case scenario, execute an **n** amount of times (the whole input size), the complexity of this algorithm can be written down as:
+
 **O(n+2)**
 
-When n = 100, complexity is 100+2.
-When n = 100000, complexity is 100000+2.
-Eventually, as **n** gets higher, the **+2** becomes insignificant and can be abbreviated.
-Thus, we can abbreviate _O(n+2)_ as _O(n)_.
-This is called **linear time complexity**.
 
-##### Quadratic Time Complexity
+When n = 100, complexity is 100+2.
+
+When n = 100000, complexity is 100000+2.
+
+Eventually, as **n** gets higher, the **+2** becomes insignificant and can be abbreviated.
+
+Thus, we can abbreviate _O(n+2)_ as _O(n)_. This is called **linear time complexity**.
+
+#### Quadratic Time Complexity
 
 For example, given the following JavaScript snippet:
 
@@ -97,14 +102,16 @@ for (i = 1; i <= n; i++) {
 ```
 
 This function holds two nested loops, and the time complexity can now be described as a quadratic function (eg. `3n²+5n+1`).
+
 Much like in the previous example, the non-squared terms do not scale at a significant rate when the input size becomes very large, and thus they can be abbreviated as well. This means the Big-O notation for this algorithm becomes:
 **O(n²)**.
 
 This is called **quadratic time complexity**.
 
-##### Other
+#### Other
 
 If the function holds three nested loops, it becomes cubic: **O(n³)**.
+
 If the input size reduces by half in every iteration, it becomes logarithmic: **O(logn)**.
 
 ## Data Structures
